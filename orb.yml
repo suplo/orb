@@ -136,7 +136,8 @@ commands:
               exit 0
             fi
 
-            if [[ $EUID == 0 ]]; then export SUDO=""; else export SUDO="sudo"; fi
+            # if [[ $EUID == 0 ]]; then export SUDO=""; else export SUDO="sudo"; fi
+            SUDO=""
 
             $SUDO npm install -g coveralls
 
